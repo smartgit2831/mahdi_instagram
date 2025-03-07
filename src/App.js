@@ -1,7 +1,7 @@
 import './App.css';
 import ForgetPassword from './component/ForgetPassword';
 import Login from './component/Login';
-import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import SignUp from './component/SignUp';
 import Search from './Page/Search';
 import Footer from './component/Footer';
@@ -19,9 +19,7 @@ import Page from './Page/Page';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <AppContent />
-      </BrowserRouter>
+      <AppContent />
     </div>
   );
 }
