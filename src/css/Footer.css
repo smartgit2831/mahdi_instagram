@@ -29,6 +29,12 @@
 .fa-plus-square-o{
     font-size: 30px;
 }
+@media (max-width: 768px) {
+    footer {
+        width: 100%;
+        height: auto;
+    }
+}
 /* @media(max-width:378px){
     .footer{
         bottom: 100px;
