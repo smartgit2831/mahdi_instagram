@@ -1,7 +1,7 @@
 import './App.css';
 import ForgetPassword from './component/ForgetPassword';
 import Login from './component/Login';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import SignUp from './component/SignUp';
 import Search from './Page/Search';
 import Footer from './component/Footer';
@@ -40,7 +40,7 @@ function AppContent() {
   return (
     <Context>
       <Routes>
-        <Route path='/' element={<Page/>}/>
+        <Route path='/' element={<Login/>}/>
         <Route path='*' element={<Navigate to='/'/>}/>
         <Route path='/Page' element={<Page/>}/>
         <Route path='/ForgetPassword' element={<ForgetPassword/>}/>
