@@ -40,7 +40,8 @@ function AppContent() {
   return (
     <Context>
       <Routes>
-        <Route path='mahdi_instagram/' element={<Login/>}/>
+        <Route path='/' element={<Login/>}/>
+        <Route path='*' element={<Navigate to='/'/>}/>
         <Route path='/Page' element={<Page/>}/>
         <Route path='/ForgetPassword' element={<ForgetPassword/>}/>
         <Route path='/signup' element={<SignUp/>}/>
