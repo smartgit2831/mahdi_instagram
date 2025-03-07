@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mahdi_instagram/static/css/main.2287dfd0.css",
+    "main.js": "/mahdi_instagram/static/js/main.e1930209.js",
+    "index.html": "/mahdi_instagram/index.html",
+    "main.2287dfd0.css.map": "/mahdi_instagram/static/css/main.2287dfd0.css.map",
+    "main.e1930209.js.map": "/mahdi_instagram/static/js/main.e1930209.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2287dfd0.css",
+    "static/js/main.e1930209.js"
+  ]
+}
