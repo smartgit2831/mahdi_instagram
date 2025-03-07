@@ -1,0 +1,37 @@
+.phone{
+    width: 400px;
+    margin: auto;
+}
+.col-6{
+    cursor: pointer;
+}
+.button{
+    width: 320px;
+}
+.input-group p{
+    color: #aea8a8;
+}
+.display_none{
+    display: none;
+}
+.display_block{
+    display: block;
+}
+.border_phone{
+    border-bottom: 2px solid black;
+    margin: auto;
+}
+.container{
+    overflow: hidden;
+    padding: 10px;
+}
+.scroll-container{
+    display: flex;
+    overflow-x: scroll;
+}
+.scroll-container button{
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+}

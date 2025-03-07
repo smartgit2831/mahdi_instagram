@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    width: 378px;
+}
+.search{
+    margin: 5px 0 10px 6px;
+}
+.search input{
+    background: #e9ecef;
+    font-size: 18px;
+}
+.large-img{
+    height: 300px;
+    padding: 0 2px 0 2px;
+}
+.small-img{
+    height: 150px;
+    padding: 0;
+}
+.row{
+    margin-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 0;
+}
+.direction{
+    padding-left: 8px;
+    direction: rtl;
+}
+.two{
+    padding-left: 6px;
+}
+.col-6{
+    padding: 0px 2px 0px 2px;
+}
+.col-4{
+    padding: 0 2px 2px 2px;
+}

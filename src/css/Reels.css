@@ -1,0 +1,64 @@
+.image_reels{
+    height: 557px !important;
+}
+.div_bottom_Reels{
+    justify-content: space-between;
+    display: flex;
+    width: 379px;
+    margin: 7px auto;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+    background: black;
+    color: wheat;
+    padding: 6px 13px;
+}
+.div_bottom_Reels input{
+    border-radius: 23px;
+    border: 2px solid black;
+    padding: 6px;
+    color: white;
+    border: 1px solid white;
+    background: black;
+}
+.div_bottom_Reels span{
+    font-size: 23px;
+}
+.progress-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #f8f8f8;
+    transition: width 0.1s linear;
+}
+.item_left p{
+    font-size: 12px;
+}
+.item_left p .fontP{
+    font-size: 24px;
+}
+.m-auto{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover{
+    color: white;
+}
+.icon .dropdown .dropdown-menu li{
+    font-size: 13px;
+}
+.icon .dropdown .dropdown-menu li i{
+    padding: 0 5px;
+}
+.item_left_reels{
+    margin-top: -388%;
+    color: white;
+    margin-left: 161%;
+    font-weight: bold;
+}
+
+
+/* timer left */
+/* {position:'absolute', top:'0', left:'0', color:'white'} */

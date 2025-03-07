@@ -1,0 +1,71 @@
+.notification{
+    display: flex;
+    justify-content: space-between;
+    width: 372px;
+    align-items: center;
+    padding: 9px 0;
+}
+.notification .img_prof{
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.notification p{
+    margin-right: auto;
+    padding-left: 12px;
+    text-align: initial;
+}
+.notification p span{
+    font-weight: bold;
+    color: black;
+}
+.notification button{
+    margin-right: 10px;
+    border: 1px solid blue;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 31px;
+    font-weight: bold;
+}
+.flash-notification{
+    display: flex;
+    margin: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.flash-notification i{
+    padding-right: 21px;
+    padding-top: 8px;
+    color: black;
+}
+.flash-notification p{
+    padding-left: 19px;
+}
+.new{
+    text-align: left;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.img_notif{
+    width: 57px;
+    height: 57px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    width: 346px;
+    margin: auto;
+}
+.head span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.notification i{
+    font-size: 23px;
+    padding: 13px;
+}

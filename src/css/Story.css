@@ -1,0 +1,9 @@
+.icon_top{
+    text-align: end;
+}
+.icon_top span i{
+    padding-right: 10px;
+    font-size: 25px;
+    margin-top: 8px;
+    color: black;
+}
