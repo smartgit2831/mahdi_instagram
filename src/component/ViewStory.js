@@ -18,7 +18,7 @@ export default function Reels() {
   const [array_heart, setArray_heart] = useState([])
 
   const {data} = useAxios('https://smartgit2831.github.io/file_json_instagram/post_home.json')
-
+  
   useEffect(()=>{
     const interval = setInterval(()=>{
       setFade(false)

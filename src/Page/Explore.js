@@ -15,6 +15,8 @@ export default function Explore() {
     const [count, setCount] = useState(0)
     const [array_sound, setArray_sound] = useState([])
     const [post, setPost] = useState()
+    const [array_heart, setArray_heart] = useState([])
+    const [array_hear, setArray_hear] = useState(true)
     const [sounding, setSounding] = useState(true)
     const [currentVideo, setCurrentVideo] = useState(null)
     const [error, setError] = useState()
@@ -85,6 +87,7 @@ export default function Explore() {
                 for(let i=0; i<data.length; i++){
                     setIsMore(prevItem => [...prevItem,data[i].isMore])
                     setMark((prev) => [...prev, true])
+                    setArray_heart(prev => [...prev, true])
                     setArray_sound(prev => [...prev, true])            
                 }
                 setCount(count +1)
@@ -118,11 +121,21 @@ export default function Explore() {
     function bookmar(){
         setMar(!mar)
     }
+    function Heart(e){
+        setArray_heart((pre)=>{
+            const newitem = [...pre];
+            newitem[e] = !newitem[e];
+            return newitem;
+        })
+    }
+    function Hear(){
+        setArray_hear(!array_hear)
+    }
 
     const More =(e)=>{
         setIsMore(prev=>{
             const newItem = [...prev];
-            newItem[e] = !data[e].isMore;
+            newItem[e] = !newItem[e];
             return newItem;
         })
     }
@@ -220,7 +233,7 @@ export default function Explore() {
         </div>
         <div className='row items'>
             <div className='col-8 item_left'>
-                <span><i className='fa fa-heart-o'></i><span>{post.explor[id].like}k</span></span>
+                <span onClick={()=>{Hear()}}><i className={array_hear ? "fa fa-heart-o" : "fa fa-heart"}></i><span>{post.explor[id].like}k</span></span>
                 <span><i className='fa fa-comment-o'></i><span>{post.explor[id].comment}k</span></span>
                 <span><i className='fa fa-paper-plane-o'></i><span>{post.explor[id].send}k</span></span>
             </div>
@@ -284,17 +297,17 @@ export default function Explore() {
         </div>
         <div className='row items'>
             <div className='col-8 item_left'>
-                <span><i className='fa fa-heart-o'></i><span>{e.like}k</span></span>
+                <span onClick={()=>{Heart(idex)}}><i className={array_heart[idex] ? "fa fa-heart" : "fa fa-heart-o"}></i><span>{e.like}k</span></span>
                 <span><i className='fa fa-comment-o'></i><span>{e.comment}k</span></span>
                 <span><i className='fa fa-paper-plane-o'></i><span>{e.send}k</span></span>
             </div>
             <div className='col-4 item_right'>
-                <span onClick={()=>{bookmark(idex)}}><i className={mark[idex] ? 'fa fa-bookmark-o' : 'fa fa-bookmark'}></i></span>
+                <span onClick={()=>{bookmark(idex)}}><i className={mark[idex] ? 'fa fa-bookmark' : 'fa fa-bookmark-o'}></i></span>
             </div>
         </div>
         <div className='text'>
             <span className='title'>{e.name}</span>
-            <span>{isMore[idex] ? e.detail.slice(0,18) : e.detail.slice(0,e.detail.length)}</span><span className={isMore[idex] ? 'word_more' : 'display_none'} onClick={()=>{More(e.id)}}>more...</span>
+            <span>{isMore[idex] ? e.detail.slice(0,e.detail.length) : e.detail.slice(0,18)}</span><span className={isMore[idex] ? 'display_none' : 'word_more'} onClick={()=>{More(e.id)}}>more...</span>
             <p>{e.date}<span>See translation</span></p>
         </div>
         </>))}
