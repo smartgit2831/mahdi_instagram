@@ -302,12 +302,12 @@ export default function Explore() {
                 <span><i className='fa fa-paper-plane-o'></i><span>{e.send}k</span></span>
             </div>
             <div className='col-4 item_right'>
-                <span onClick={()=>{bookmark(idex)}}><i className={mark[idex] ? 'fa fa-bookmark-o' : 'fa fa-bookmark'}></i></span>
+                <span onClick={()=>{bookmark(idex)}}><i className={mark[idex] ? 'fa fa-bookmark' : 'fa fa-bookmark-o'}></i></span>
             </div>
         </div>
         <div className='text'>
             <span className='title'>{e.name}</span>
-            <span>{isMore[idex] ? e.detail.slice(0,18) : e.detail.slice(0,e.detail.length)}</span><span className={isMore[idex] ? 'word_more' : 'display_none'} onClick={()=>{More(e.id)}}>more...</span>
+            <span>{isMore[idex] ? e.detail.slice(0,e.detail.length) : e.detail.slice(0,18)}</span><span className={isMore[idex] ? 'display_none' : 'word_more'} onClick={()=>{More(e.id)}}>more...</span>
             <p>{e.date}<span>See translation</span></p>
         </div>
         </>))}
