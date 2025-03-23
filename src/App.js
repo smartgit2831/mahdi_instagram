@@ -28,7 +28,7 @@ function AppContent() {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
-    if (location.pathname === '/') {
+    if (location.pathname === '/'|| location.pathname === '/ForgetPassword' || location.pathname === '/signup') {
       setShow(false);
     } else {
       setShow(true);
