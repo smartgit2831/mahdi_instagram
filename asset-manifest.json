@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mahdi_instagram/static/css/main.6c7ddd5c.css",
-    "main.js": "/mahdi_instagram/static/js/main.2f7bfc94.js",
+    "main.js": "/mahdi_instagram/static/js/main.08d4fcf9.js",
     "index.html": "/mahdi_instagram/index.html",
     "main.6c7ddd5c.css.map": "/mahdi_instagram/static/css/main.6c7ddd5c.css.map",
-    "main.2f7bfc94.js.map": "/mahdi_instagram/static/js/main.2f7bfc94.js.map"
+    "main.08d4fcf9.js.map": "/mahdi_instagram/static/js/main.08d4fcf9.js.map"
   },
   "entrypoints": [
     "static/css/main.6c7ddd5c.css",
-    "static/js/main.2f7bfc94.js"
+    "static/js/main.08d4fcf9.js"
   ]
 }
